@@ -1,0 +1,93 @@
+.camisa-search-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.results-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.result-item {
+  padding: 6px 8px;
+  border-bottom: 1px solid #006eff;
+  background-color: #0096fa;
+  transition: background-color 0.3s;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item:hover {
+  background-color: #006eff;
+}
+
+.result-item a {
+  text-decoration: none;
+  color: whitesmoke;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 600px) {
+  .camisa-search-container {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+
+  .search-input {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .result-item {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .camisa-search-container {
+    max-width: 80%;
+  }
+
+  .search-input {
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  .result-item {
+    padding: 5px 7px;
+    font-size: 13px;
+  
+  }
+}
+

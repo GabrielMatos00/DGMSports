@@ -1,0 +1,127 @@
+/* Container principal do card */
+.camisa-detalhes {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+  overflow: hidden; /* Garante que a imagem não saia do card */
+}
+
+/* Div da imagem */
+.imagem-container {
+  margin-bottom: 20px;
+}
+
+.camisa-imagem {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+}
+
+/* Título do time */
+.camisa-detalhes h1 {
+  font-size: 28px;
+  margin: 20px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Preço */
+.camisa-detalhes p.preco {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Rótulos e seletores */
+.camisa-detalhes label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #444;
+}
+
+.camisa-detalhes select,
+.camisa-detalhes input[type="text"],
+.camisa-detalhes input[type="number"] {
+  width: calc(100% - 20px); /* Ajusta a largura para o padding do container */
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Contêiner de personalização */
+.camisa-detalhes .personalizacao-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Botões de personalização */
+.personalizacao-opcoes {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.btn-personalizacao {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-personalizacao.active {
+  background-color: #0056b3;
+}
+
+.btn-personalizacao:hover {
+  background-color: #0056b3;
+}
+
+/* Botão de comprar */
+.camisa-detalhes .btn-comprar {
+  background-color: #28a745;
+  color: white;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.camisa-detalhes .btn-comprar:hover {
+  background-color: #218838;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+  .camisa-detalhes {
+    padding: 15px;
+  }
+
+  .camisa-detalhes h1 {
+    font-size: 24px;
+  }
+
+  .camisa-detalhes p.preco {
+    font-size: 18px;
+  }
+
+  .camisa-detalhes select,
+  .camisa-detalhes input[type="text"],
+  .camisa-detalhes input[type="number"] {
+    width: calc(100% - 16px); /* Ajusta para melhor adequação em dispositivos móveis */
+  }
+}
